@@ -1,0 +1,34 @@
+<pre>
+{{#if invite}}
+{{#if guest}}
+{{guest.name}}
+{{/if}}
+{{invite.title}}
+{{invite.shortMsg}}
+{{#if mainPhoto}}
+{{mainPhoto.url}}
+{{mainPhoto.title}}
+{{mainPhoto.description}}
+{{/if}}
+{{#if longMsg}}
+{{{longMsg}}}
+{{/if}}
+{{invite.addrText}}
+{{invite.timeFromString}} ({{invite.timeFrom}})
+{{invite.timeToString}} ({{invite.timeTo}})
+{{#if bgPhoto}}
+{{bgPhoto.url}}
+{{bgPhoto.title}}
+{{bgPhoto.description}}
+{{/if}}
+{{#if sliderPhotos}}
+{{#each sliderPhotos}}
+{{url}}
+{{title}}
+{{description}}
+{{/each}}
+{{/if}}
+{{else}}
+Oh no, we have an error loading the Invite
+{{/if}}
+</pre>

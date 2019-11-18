@@ -1,0 +1,20 @@
+/*
+  WARNING:
+  This file includes all the defaults, normally this file should NOT be modified.
+  Include the design styles in main.scss
+
+*/
+
+html {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: none !important;
+}
+
+/* Enforce all external styles to be (auto) prefixed to `div.niview-main` */
+/* This ensures the styles are applied only to the invite, not to the whole page */
+div.niview-main {
+  @import "./styles/main.scss";
+}
