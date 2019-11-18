@@ -41,7 +41,7 @@ jobs:
       uses: crazy-max/ghaction-github-pages@v1.2.2
       if: success()
       with:
-        repo: a00001
+        repo: nesign/a00001
         target_branch: target_branch_1
         build_dir: dist
       env:
